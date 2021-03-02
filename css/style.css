@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+
+    font-family: 'Rubik', sans-serif;
+    color: #133351;
+    line-height: 130%;
+}
+
+.productCard {
+    overflow: hidden;
+
+    width: 237px;
+    height: auto;
+
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(176, 190, 197, 0.24), 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cardContent {
+    padding: 0 16px 24px 16px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+
+}
+
+.flowerColor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+button.flowerColorCircle {
+    width: 24px;
+    height: 24px;
+
+    margin: 4px;
+
+    border: 0;
+    outline: none;
+
+    overflow: hidden;
+    border-radius: 200px;
+
+    cursor: pointer
+}
+
+button.flowerColorCircle:hover {
+    filter: opacity(70%);
+    border: 0;
+    outline: none;
+}
+
+button.flowerColorCircle:focus {
+    border: 0;
+    box-shadow: 0 0 0 3px #5297D7;
+}
+
+button.flowerColorCircle#color_01 {
+    background-color: #FD90BE;
+    margin-left: 0;
+}
+
+button.flowerColorCircle#color_02 {
+    background-color: #AB3565;
+}
+
+button.flowerColorCircle#color_03 {
+    background-color: #cb9deb;
+}
+
+button.flowerColorCircle#color_04 {
+    background-color: #9D529E;
+}
+
+button.flowerColorCircle#color_05 {
+    background-color: #B54444;
+}
+
+.addToCart {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.price .oldPrice {
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.price .newPrice {
+    font-weight: bold;
+    font-size: 24px;
+
+    color: #d16c53;
+}
+
+button.addToCartButton {
+    background-image: url("../img/addToCart-normal.svg");
+
+    width: 80px;
+    height: 48px;
+
+    border: 0;
+    outline: none;
+    border-radius: 16px;
+
+    cursor: pointer;
+}
+
+button.addToCartButton:hover {
+    background-image: url("../img/addToCart-hover.svg");
+
+    border: 0;
+    outline: none;
+}
+
+button.addToCartButton:active {
+    background-image: url("../img/addToCart-active.svg");
+
+    border: 0;
+    outline: none;
+}
